@@ -1,0 +1,16 @@
+version: "2"  
+services:
+  influx:
+    image: bitnami/influxdb:latest
+    environment:
+      - INFLUXDB_ADMIN_USER_PASSWORD=my_password
+      - INFLUXDB_USER=myuser
+      - INFLUXDB_USER_PASSWORD=my_password
+      - INFLUXDB_ADMIN_USER_TOKEN=my_password
+    ports:
+      - "8086:8086"
+      - "8088:8088"
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
