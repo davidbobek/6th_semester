@@ -29,3 +29,17 @@
 ## MQTT Topics
 - Topics are used to filter messages
 - A topic is a string that the broker uses to filter messages for each connected client
+
+# INFLUXDB
+- InfluxDB is an open-source time series database
+- Schema-less design
+- TIme series data is indexed by a timestamp and a set of tags
+- Retention period: The duration for which data is stored in the database (TTL: Time to Live)   
+## Anatomy of InfluxDB
+- Bucket: A bucket is a container for time series data (SQL equivalent of a database)
+- Measurement: A measurement is a collection of fields and tags (SQL equivalent of a table)
+- Field: A field is a key-value pair (SQL equivalent of an unindexed column)
+- Tag: A tag is a key-value pair  (SQL equivalent of an indexed column)
+- Point: A point is a single data record in InfluxDB (SQL equivalent of a row)
+
+- Tagging: Tagging is the process of adding metadata to the data points
