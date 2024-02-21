@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://about.me/davidbobek> a foaf:Person ; # replace IRI
+    foaf:name "David Bobek" ;              # add your name
+    foaf:linkedin <https://www.linkedin.com/in/davidbobek/> ;
+    foaf:schoolHomepage <https://www.fh-krems.ac.at> ;
+    foaf:workplaceHomepage <https://www.tttech-auto.com> ; # add your workplace or remove
+    foaf:knows <https://www.linkedin.com/in/davidbobek/> ;
+    foaf:knows <https://aleksandarzenkov.bg/#me> ;
+    foaf:knows <https://about.me/dinuscripnic> ;
+    foaf:knows <https://danielmolnar.at/#me> ;
+    foaf:knows <https://egorevlampiev.at/#me> ;
+    foaf:knows <https://kaloyanstoyanov.at/#me> ;
+    foaf:knows <https://katarinabozic.at/#me> ;
+    foaf:knows <https://parimalasabau.at/#me> ;
+    foaf:knows <https://rouasalahi.at/#me> ;
+    foaf:knows <https://saragrimaldi.at/#me> ;
+    foaf:knows <https://antoninorossi.at/#me> .
+    
+    

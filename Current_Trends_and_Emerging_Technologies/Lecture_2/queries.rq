@@ -1,0 +1,71 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+# knows relationships
+select * where { 
+	?person1 foaf:knows ?person2 .
+}
+
+# symmetric knows relationships
+select * where { 
+	?person1 foaf:knows ?person2 .
+    ?person2 foaf:knows ?person1 .
+}
+
+# remove symmetric results
+select * where { 
+	?person1 foaf:knows ?person2 .
+    ?person2 foaf:knows ?person1 .
+    filter(str(?person1) < str(?person2))
+}
+
+# people I know
+select * where { 
+	<http://stefanbischof.at/#me> foaf:knows ?person2 .
+}
+
+# recommend people I might know - friend of a friend
+select * where { 
+	<http://stefanbischof.at/#me> foaf:knows ?person2 .
+    ?person2 foaf:knows ?person3 .
+    filter(?person3 != <http://stefanbischof.at/#me>)
+}
+
+# recommend people I might know - people who know me
+select * where { 
+	?person2 foaf:knows <http://stefanbischof.at/#me> .
+}
+
+# nice, but filter out people I know already
+select * where { 
+	?person2 foaf:knows <http://stefanbischof.at/#me> .
+    FILTER NOT EXISTS { <http://stefanbischof.at/#me> foaf:knows ?person2 }
+}
+
+# combine the two recommendations
+select * where { 
+    { 	<http://stefanbischof.at/#me> foaf:knows ?person2 .
+        ?person2 foaf:knows ?person3 .
+        filter(?person3 != <http://stefanbischof.at/#me>) 
+    } UNION {
+        ?person3 foaf:knows <http://stefanbischof.at/#me> .
+        FILTER NOT EXISTS { <http://stefanbischof.at/#me> foaf:knows ?person3 }
+    }
+}
+
+# can we make this shorter?
+select * where { 
+    <http://stefanbischof.at/#me> (foaf:knows/(foaf:knows|^foaf:knows))|^foaf:knows ?person2 .
+    filter(?person2 != <http://stefanbischof.at/#me>) # remove myself
+    filter not exists { <http://stefanbischof.at/#me> foaf:knows ?person2 } # remove people I already know
+}
+
+
+
+### EPO
+
+CONSTRUCT WHERE {
+  ?publn rdf:type patent:Publication ;
+         patent:inventorVC ?invt1 ;
+         patent:titleOfInvention ?title .
+  ?invt1 vcard:fn "Dhungana, Deepak" ; ?p ?o .
+}

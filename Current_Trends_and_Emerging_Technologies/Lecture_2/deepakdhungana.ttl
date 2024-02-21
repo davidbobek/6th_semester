@@ -1,0 +1,6 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.linkedin.com/in/deepakdhungana/> foaf:name "Deepak Dhungana" ;
+    foaf:workplaceHomepage <https://www.fh-krems.ac.at> ;
+    foaf:knows <http://stefanbischof.at/#me>.

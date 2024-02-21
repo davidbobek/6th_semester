@@ -1,0 +1,14 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://stefanbischof.at/#me> foaf:name "Stefan Bischof" ;
+    foaf:firstName "Stefan" ;
+    foaf:surname "Bischof" ;
+    foaf:homepage <https://www.stefanbischof.at/> ;
+    foaf:schoolHomepage <https://www.tuwien.ac.at> ;
+    foaf:workplaceHomepage <http://www.siemens.at> ;
+    foaf:workplaceHomepage <https://www.fh-krems.ac.at> ;
+    foaf:currentProject <https://eu-phoenix.eu/> ;
+    owl:sameAs <https://www.linkedin.com/in/stefanbischof/> ;
+    owl:sameAs <https://dblp.org/pers/b/Bischof_0002:Stefan> ;
+    foaf:knows <https://www.linkedin.com/in/deepakdhungana/> .
