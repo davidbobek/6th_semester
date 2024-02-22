@@ -160,3 +160,53 @@ the higher the HU, the denser the material
     - Header file and image file
     - NII
     - Many DICOM together
+
+## Supervised Learning
+- Classification
+- Regression
+
+## Unsupservised Learning
+- Clustering
+- Dimensionality Reduction
+- Anomaly Detection
+- t-SNE
+- PCA
+- UMAP
+
+## Process of Image Processing
+- Classification
+- Detection
+- Segmentation
+
+## Semantic Segmentation vs Instance Segmentation
+- Semantic Segmentation
+    - Assigns a class to each pixel
+- Instance Segmentation
+    - Assigns a class to each object
+
+## Image Processing Techniques
+- Image Enhancement: Improving the quality of the image
+- Image Restoration: Repairing the image
+- Image Compression: Reducing the size of the image
+- Image Analysis: Extracting information from images
+- Image Synthesis: Creating new images from existing ones
+
+## Radiomics
+- Extracting quantitative features from medical images 
+- Preprocessing
+    - Contrast enhancement
+
+- ROI: Region of Interest
+    - Tumor
+    - Lesion
+    - Organ
+
+- Histogram Equalization
+    - Improves the contrast of the image
+    - Spreads out the intensity values
+    - Cumulative Distribution Function
+
+- Quantization
+    - Enables the segmentation of the image
+    - Reduces the number of gray levels
+
