@@ -1,0 +1,76 @@
+# Biomedical Imaging
+- Strucural Imaging
+    - X-ray
+    - CT
+    - MRI
+    - Ultrasound
+- Functional Imaging
+    - PET
+    - SPECT
+    - fMRI
+
+
+## Microscopy
+- Histopathology: Study of tissues under microscope
+- Staining: Dyeing the tissues to make them visible under microscope
+- Reflectance Confocal Microscopy: 
+    - Uses a laser to scan the tissue and create a black and white image
+    - Used in dermatology
+- UltraSound Microscopy
+    - Uses high frequency sound waves to create an image
+    - Used in imaging of internal organs (baby in womb)
+- Medical Sonography
+    - Uses ultrasound to visualize subcutaneous body structures
+    - Used in obstetrics
+- UltraSound Localization Microscopy
+    - Uses ultrasound with microscopes to visualize cells
+    - Used in cancer research
+- Optical Coherence Tomography
+    - Uses light to capture micrometer-resolution, 3D images from within optical scattering media
+    - Used in ophthalmology (retina imaging)
+- ColonoScopy
+    - Uses a camera to visualize the colon
+    - Used in colon cancer screening
+    - The most invasive of all the imaging techniques
+- Xray Microscopy
+    - Uses X-rays to visualize cells
+    - Safe to use on living cells and tissues
+    - Cant pass through thick tissues and bones
+- MamoGraphy
+    - Uses X-rays to visualize the breast
+    - Used in breast cancer screening
+- Digital Subtraction Angiography
+    - Uses X-rays to visualize blood vessels
+    - Used in angiography
+- Computed Tomography (CT)
+    - Uses X-rays to visualize the body in 3D
+    - Used in cancer diagnosis
+    - Rotating X-ray machine
+- Magnetic Resonance Imaging (MRI)
+    - Uses magnetic fields to visualize the body in 3D
+    - CANT go with metals 
+    - Hydrogen atoms are used to align the magnetic field
+    - Can show much more detail than CT due to  
+-  Emisson Tomography
+    - Uses radioactive tracers to visualize the body in 3D
+    - Used in cancer diagnosis
+    - PET
+        - Positron Emission Tomography
+        - Combined with CT/MRI for conology imaging
+        - Better quality images 
+    - SPECT
+        - Single Photon Emission Computed Tomography
+        - Bone scans/ Heart scans
+        - Lower quality images
+    
+- PhotoAcoustic Tomography
+    - light heats up the tissue and creates sound waves
+    - 3D images of the body are created
+    - Used in cancer diagnosis
+    - Latest Technology
+
+## What is a PACS
+- PACS
+    - Picture Archiving and Communication System
+    - Medical imaging technology used for storing, retrieving, presenting, and sharing images produced by various medical hardware modalities
+    - Used in radiology, cardiology, pathology, and ophthalmology
