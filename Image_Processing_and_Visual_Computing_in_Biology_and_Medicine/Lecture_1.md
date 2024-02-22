@@ -74,3 +74,89 @@
     - Picture Archiving and Communication System
     - Medical imaging technology used for storing, retrieving, presenting, and sharing images produced by various medical hardware modalities
     - Used in radiology, cardiology, pathology, and ophthalmology
+
+## Radioloigst responsibilities
+- Detecting and diagnosing diseases
+- Reporting the findings to the referring physician
+
+## Human Vision
+- Cone: Color vision
+- Rod: Night vision
+
+- Colorblindness is cauase by the absence of cones in the eye
+- 3 types of cones: Red, Green, Blue
+- L - Cones: Long wavelength: Red
+- M - Cones: Medium wavelength: Green
+- S - Cones: Short wavelength: Blue
+
+## AI for Medical Imaging
+- Needs big data
+- Transfer learning
+- Data augmentation
+
+- Benefits
+    - Faster diagnosis
+    - Save lives
+
+- Challenge
+    - Different types of modalities
+        (CT, MRI, X-ray, Ultrasound)
+    - Lack of data 
+
+## Medical Imaging Usages
+- Early detection of diseases
+- Measurements 
+- Biomarkers characterization
+- Disease progression
+- Lesion Segmentation
+
+## What is a digital image
+- Creating a discrete representation of an image from a continuous one
+- Pixels: Smallest unit of a digital image
+- Resolution: The level of detail in an image
+
+- Feature function: A function that maps a feature vector to a real number
+- Quantization: Process of mapping a continuous range of values to a finite range of values
+
+- Think about an image as a function
+    - f(x,y) = Pixel value at (x,y)
+    - f(x,y,z) = Voxel value at (x,y,z)
+    - f(x,y,z,t) = Time series of 3D images
+
+## CT Image Pixel Values
+- Each pixel is assigned a number (Hounsfield Unit)
+- Hounsfield Unit: A quantitative scale for describing radiodensity
+
+```bash
+HU = 1000 * (μ - μw) / μw
+    - μ: Linear attenuation coefficient of the material
+    - μw: Linear attenuation coefficient of water
+```
+the higher the HU, the denser the material
+
+## MRI Contrast
+- Basis for imaging: Radio waves emitted by hydrogen atoms
+- T1 Weighted Image
+    - Fat is bright
+    - Water is dark
+- T2 Weighted Image
+    - Fat is dark
+    - Water is bright
+
+## Imagining Planes
+- Axial: Horizontal
+- Coronal: Vertical
+- Sagittal: Vertical but from the side
+
+
+## Image Processing Formats
+- DICOM: Digital Imaging and Communications in Medicine
+    - Standard for handling, storing, printing, and transmitting information in medical imaging
+    - Key:Value pairs
+
+- NIfTI: Neuroimaging Informatics Technology Initiative
+    - Standard for storing and sharing neuroimaging data
+    - 3D and 4D images
+    - Header file and image file
+    - NII
+    - Many DICOM together
