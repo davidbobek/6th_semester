@@ -214,6 +214,16 @@ Multi-stage algorithm which is composed of the following steps:
 LoG is a second derivative operator which which is a sum of the second derivatives of the image. It does not provide the direction of the edge but only the strength. It is very sensitive to noise and therefore it is recommended to apply a Gaussian filter to the image before applying LoG. Another option is to apply a Laplacian of Gaussian filter combined. As the Gaussian filter is a low-pass filter, it will remove the high-frequency noise and then apply the Laplacian filter to detect the edges in the image.
 
 ## Derivative of Gaussian
-The derivative of Gaussian is calculated by the following formula:
-    
+Is a concept which allows us to make the Gaussian filter more precise. The Gaussian filter is a low-pass filter and therefore it removes the high-frequency noise. The Derivative of Gaussian filter is a high-pass filter and therefore it removes the low-frequency noise. By combining the 2 filters we can get a very precise edge detection.
 
+## Hysteresis Thresholding
+Hysteresis thresholding is a method used to threshold the gradient magnitude. It is composed of 2 thresholds: High and Low. If the gradient magnitude is greater than the high threshold, it is considered as an edge. If the gradient magnitude is less than the low threshold, it is not considered as an edge. If the gradient magnitude is between the high and low threshold, it is considered as an edge if it is connected to a pixel that is greater than the high threshold.
+
+
+## Conclusion
+Edge detection and filtering are important concepts in computer vision. They are used to identify the boundaries of objects in an image and reduce the noise in the image. The Gaussian kernel is used to perform Gaussian blur and reduce the noise in the image. The edge detection is done by calculating the gradient to each pixel and applying the concept of violent change in intensity. The derivative of Gaussian filter is used to make the Gaussian filter more precise. The Canny edge detection is a multi-stage algorithm that is used to detect the edges in the image. The hysteresis thresholding is used to threshold the gradient magnitude and identify the edges in the image.
+
+## Conclusion to the article
+This article looks in depth into the concept of edge detection and filtering in computer vision. It explains the concept of edge detection and filtering and how it is done. It also explains the concept of the kernel and how it is used to perform operations such as convolution, filtering, and edge detection. The article also provides mathematical explanations into concepts like the Gaussian kernel and the concept of using the derivatives to determine values like the gradient magnitude, direction, and end edge strength. In addition to the mathematical explanations a real plots and images are provided to give a visual representation of the concepts and their hyperparameter tuning. 
+
+At the conclusion of the article, I would like to thank Mr. Liad Magen for his guidance and provision of materials explaining the discussed topics. His expertise and support have been instrumental in enriching the content and insights presented.
