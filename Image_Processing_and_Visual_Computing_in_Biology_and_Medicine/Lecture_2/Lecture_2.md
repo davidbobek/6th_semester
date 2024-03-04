@@ -181,6 +181,7 @@ with distinct gray-level properties.
   - Level-sets, 
   - Fast-Marching, 
   - Graph-based
+  
 ### Edge Detection
 - Can produce disconnected boundaries
 - Over/Under Segmentation
