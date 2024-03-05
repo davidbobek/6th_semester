@@ -136,3 +136,16 @@ The next figure is showing us a real example on how the backpropagation is worki
 
 ## Model Distillation
 The idea of having large models is a thrilling one. However, the large models are not always the best solution and often are not sustainable and achievable unless the computational power is not a problem. The large models are often slow to train and hard to interpret. They might introduce a lot of noise and potentially have learned occasional patterns that are not relevant to the test data. The model distillation is a process of creating a smaller model which is trained to mimic the predictions of a larger model. The key concept of the model distillation is that the smaller model is trained on the outputs of the larger model. This allows the smaller model to be trained very efficiently with already pre-processed data and observed patterns. The smaller model is able to generalize better due to the lack of noise and irrelevant patterns. The trainig time of smaller model is a fraction of the time needed to train the larger model. This allows the Machine Learning Engineers to save time, resources,  and observe new behvaiours of the model which is not influenced by the noise and irrelevant patterns.
+
+## Optimization
+Purpose of the optimization is to minimize the error of the network and improve the predictions. The optimization is done by adjusting the weights of the network. The most commonly used optimization algorithms are: 
+    - Gradient Descent
+    - Stochastic Gradient Descent
+    - Adam
+Partial derivatives are used to calculate the gradient of the loss function. The gradient is then used to adjust the weights of the network with the goal of minimizing the error of the network. The learning rate is a hyperparameter that is used to control the magnitude of the weight updates.
+The crucial aspect to look at is to not set the learning rate too high as the model is now being able to discover local minima. On the other hand when learning rate is too small the model gets stuck in the local minima not being able to discover more and plateus.
+
+## Conclusion
+This Article solves the problem of understanding the Neural Networks and Convolutional Neural Networks. It provides a comprehensive overview of the fundamental building blocks of the Neural Networks, the architecture, the error calculation, the optimization process, the activation functions. The insights provided in this article are based on the real-world experience and in-depth research. The article is a great starting point for anyone who wants to learn more about Neural Networks and Convolutional Neural Networks.
+
+At the conclusion of the article, I would like to thank Mr. Liad Magen for his guidance and provision of materials explaining the discussed topics. His expertise and support have been instrumental in enriching the content and insights presented.
