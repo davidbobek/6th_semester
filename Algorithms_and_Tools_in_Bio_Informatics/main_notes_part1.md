@@ -146,7 +146,7 @@ Overview:
     3. Perform mapping 
     4. Denerate consensus sequence
 
-22. WHAt is the benefit of using Random Forest
+22. What is the benefit of using Random Forest
 - Feature importance
 23. What is the best Algorithm for predicting protein structures
 - AlphaFond
