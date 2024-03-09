@@ -92,7 +92,7 @@ Output:
 This code snippet creates 25 ordered slices of the 3D volume of the CT scan. The output is a 5x5 grid of 2D images of the CT scan. We as humans can clearly see the progression of the 3D image and the area where the lungs are located. The next step is to preprocess the CT scan in order to extract the lung images.
 
 ## Preprocessing the CT scan
-In order to extract the lung images from the CT scan, we need to preprocess the CT scan. This steps converts the data into a format which is going to be easier to work with. This format is float32. After conversion to float32 we are going to normalize the data from 0 to 1. This allows us to work with the data in a more efficient manner. The following code snippet is going to be used for this purpose:
+In order to extract the lung images from the CT scan, we need to preprocess the CT scan. This steps converts the data into a format which is going to be easier to work with. This format is called float32. After conversion to float32 we are going to normalize the data from 0 to 1. This allows us to work with the data in a more efficient manner. The following code snippet is going to be used for this purpose:
 
 ```python
 def preprocess_CT(volCT):
