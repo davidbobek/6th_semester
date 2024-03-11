@@ -1,0 +1,24 @@
+# Transformer Encoder
+# Transformer
+# Attention & Attention maps
+# RNN
+# NLP
+# Self-Supervised Learning
+# ViT: Vision Transformer   
+
+# Image Synthesis
+# GANs 
+# Autoencoders
+# YOLO  
+# U-Net: king of segmentation
+# Fast R-CNN
+# Faster R-CNN
+
+## timm: efficient net
+
+## How to read papers
+1. Read The title 
+2. look at the pictures 
+3. Conclusion
+4. Abstract
+6. Results
