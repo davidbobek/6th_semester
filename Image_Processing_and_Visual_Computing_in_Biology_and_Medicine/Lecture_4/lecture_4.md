@@ -22,3 +22,12 @@
 3. Conclusion
 4. Abstract
 6. Results
+
+## Active Contours
+- What is it?
+    - It is a technique used to extract features from an image by using a curve that evolves over time
+
+- How does it work?
+    - It is a curve that evolves over time to minimize an energy functional that is defined over the curve
+
+## R
