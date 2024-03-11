@@ -1,0 +1,5 @@
+ATBI_fastq/
+reference.fasta
+output.bam
+output.sam
+SARS_CoV2_data.fasta
