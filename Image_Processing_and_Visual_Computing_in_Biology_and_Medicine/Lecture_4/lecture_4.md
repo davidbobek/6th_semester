@@ -30,4 +30,3 @@
 - How does it work?
     - It is a curve that evolves over time to minimize an energy functional that is defined over the curve
 
-## R
