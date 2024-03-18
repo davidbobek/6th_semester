@@ -23,7 +23,7 @@
 - a cell is the smallest unit of life
 
 ## What are Histones and Nucleosomes?
-- Histones are proteins that help organize DNA into a compact structure caed a nucleosome
+- Histones are proteins that help organize DNA into a compact structure called a nucleosome
 - Nucleosomes are a wrapped DNA around a core of histone proteins
     - ![alt text](imgs/image-2.png)
 

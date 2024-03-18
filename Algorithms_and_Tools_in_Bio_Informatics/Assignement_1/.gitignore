@@ -3,3 +3,4 @@ reference.fasta
 output.bam
 output.sam
 SARS_CoV2_data.fasta
+GSE107465_RAW.tar
