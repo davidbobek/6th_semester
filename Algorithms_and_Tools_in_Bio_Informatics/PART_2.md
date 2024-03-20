@@ -137,3 +137,31 @@ Evaluation
     
 - E : formula -> K * m * n * e^(-lambda * S)
 - P: formula -> 1 - e^(-lambda * S)
+\\\\    `K` = K value for the scoring matrix                                                                                                                                                                                                                                            
+
+
+RANDOM NOTES
+- PAM and BLOSUM are scoring matrices and are both substitution matrices
+- all identty matrices are substitution matrices but the other way around 
+- higher PAM allows more mutations
+- PAM250: 250 mutation in 100 amino acids, PAM1 
+- PAM1: 1 mutation in 100 amino acids
+- PAM1: 99% similiarity
+- PAM250: 20% similiarity
+
+- Sequences
+    - Too many gaps = gap is cheap
+    - Too little gaps = gap is expensive
+
+- Linear vs affine gap penalty
+    - d: gap cost (3)
+    - g: gap length (3)
+    - e: gap extension (0.1)
+
+    - linear gap cost: matches + (y(g   )) 
+    - affine gap cost
+
+
+
+3 small questions from the frist
+1 large from second
