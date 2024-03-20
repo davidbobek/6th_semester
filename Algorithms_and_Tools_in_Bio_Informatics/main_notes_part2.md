@@ -202,5 +202,45 @@ Result: -3 - (2-1) * 0.1 = -3.1
     - T: threshold
     - Concept of BLAST: 
         1. Find all words with a length of W in the query sequence which have a higher similiarity than T
+        2. Take the words and find them in the string of the database sequence
+        3. Extend the allignemnt to the left and right of the word to find the best allignemnt
+
+    - Evaluation of the BLAST
+        - P value: probability of the allignemnt
+        - E value: expected value of the allignemnt
+
+
+### FASTA
+    - 4 phases
+        1. Simple index search (indices = short exact matches)
+        2. Rouch evaluation of locally optimal sections
+        3. Connect sections to larger regions
+        4. Calc the localoptimal narrow stripe around the best regions
+
+    1. Index search
+        Example: Sequence R K T U R K (word length 4)
+            – 1st word R K T U
+            – 2nd word K T U R
+            – 3rd word T U R K
+
+        Compare the words with the database and evaluate the score
+    
+    Weakness
+        1. Two protein sequences with a low similarity
+            ABABABAB
+            ACACACAC
         
+        2. The narrow band in the 4th phase can be too narrow as only half of the identity is found
+
+        3. FASTA only considers the perfect matches.
+
+
 ## Multiple Sequence Allignment
+    - Homologous sequences: sequences which are related
+    - Multiple sequence allignment: alligning more than 2 sequences
+
+### Similiarity Measures
+    - Pairwise sequence allignment
+        - Sequences with common sub-pattern which are not related
+    - Multiple sequence allignment
+        -  Related sequences
