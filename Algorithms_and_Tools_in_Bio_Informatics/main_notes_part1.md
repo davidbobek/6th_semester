@@ -44,8 +44,21 @@ Overview:
 5. Protein
 - PDB
 
+## Primary Databases, Secondary Databases, Composite Databases
+- Primary: 
+    - GenBank
+    - DDBJ
+    - EMBL-ENA
+- Secondary:
+    - UniProt
+    - Ensembl
+    - OMIM
+    - ArrayExpress
 
-
+- Composite:
+    - BioGPS
+    - OWL
+    
 # IMPORTANT
 
 - what is bio inf and why we need
