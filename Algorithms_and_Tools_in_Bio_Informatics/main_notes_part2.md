@@ -244,3 +244,95 @@ Result: -3 - (2-1) * 0.1 = -3.1
         - Sequences with common sub-pattern which are not related
     - Multiple sequence allignment
         -  Related sequences
+
+
+## Questions
+1. What is the difference between similarity and allignment?
+- Similiariy is the measure of how well the sequences match
+- Allignment is the process of overlapping the sequences to find the best match using gaps and mismatches
+
+2. What are the requirements for allignemnt algorithms?
+- Gaps Mismatches and Matches
+- Fast
+- Dynamic Programming
+- Scoring system
+
+3. Difference between substitution matrices, Identity matrices and Position specific scoring matrix?
+- Substitution matrices: used to score the allignemnt based on the table
+- Identity matrices: Diagonal is the same positive number
+- Position specific scoring matrix: Count, Frequency, Weight Matrix
+
+4. What does the odds ratio tell us?
+- Probablility that 2 sequences derive from mutation or they are not related and are random
+
+5. What are the most important scoring matrices for protein sequences and why are they impprtant?
+- PAM: Perecent Accepted Mutation
+    - Tells us the probability of a mutation (1 PAM represents 1 Mutation in 100 aminoacids)
+    - The lower the PAM the closer the sequences
+- BLOSUM : Blocks Substitution Matrix
+    - Based on the BLOCKS database
+    - Used to score the allignemnt of protein sequences
+    - Used by BLAST
+
+6. What are the steps when building the PAM
+- 1. Collect and allign sequences
+- 2. Calculate common sequences and the phylogenetic tree
+- 3. Build a replacement matrix
+
+7. What if the gap cost is too little or too high?
+- Too high: not enough gaps and allignemnt is not good
+- Too little: too many gaps and allignemnt is not good
+
+8. Calculate the gap cost for the following example:
+
+-TACGTGGATCG
+ATAC---GAAC-
+
+- d = 3 (gap opening)
+- e = 0.1 (gap extension)
+- g = 3 (gap length)
+
+- Formula: -d - (g-1) * e
+
+-3- - (3-1) * 0.1 = -3.2
+
+9. What is the difference between global and local allignment?
+- Global: Allign the whole sequence
+- Local: Allign the best part of the sequence
+
+10. When is Dotplot used?
+- To visualize the similarity of 2 sequences
+- During FASTA
+
+11. Which algorithms we have in Dynamic Programming?
+- Needleman-Wunsch
+- Smith-Waterman
+
+12. What is the difference between Needleman-Wunsch and Smith-Waterman?
+- Needleman-Wunsch: Global allignment, can have negative values
+- Smith-Waterman: Local allignment, worst case is 0
+
+13. How do they look like?
+- Needleman-Wunsch: 
+    - 0 top top left
+    - gap cost: each move on the XY axis is penalized
+    - 1st row and column are a multiplication of the gap cost
+    - 3 inputs
+        - X 
+        - Y
+        - Diagonal (comes from the BLOSUM62 table)
+- Smith-Waterman:
+    - 0, 4 inputs
+    - X
+    - Y
+    - Diagonal (comes from the BLOSUM62 table)
+    - 0`
+
+14. What is the concept of BLAST?
+- Define wordlist
+- Compare the words with the database
+- Extend the allignemnt to the left and right of the word to find the best allignemnt
+
+15. What is the evaluation of the BLAST?
+- E value: expected value of the allignemnt
+- P value: probability of the allignemnt
