@@ -67,11 +67,15 @@ Overview:
 - know the instiutuce, embl ena and ddbj
 - data pre processing and data processing 
 - what are primers (Polynucleotide) and what is the use of it = analyze the dna sequence
+    - Primer is 
 - ORF: open reading frame = AUG , start till stop codon
 - consensus sequence = most frequent nucleotide at each position 
 - gene expression = what is the gene expression = amount of RNa in a cell or multiple cells
 - ML: why we need what can we do with it, 
 - Alfafold = input / output , what it does
+    - Input: protein sequence
+    - Output: 3D structure of protein
+    - What it does: predicts protein structure
 
 
 # Questions for exam:
