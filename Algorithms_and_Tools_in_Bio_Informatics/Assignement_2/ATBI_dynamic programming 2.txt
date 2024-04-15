@@ -1,0 +1,13 @@
+Dynamic Programming: Results may differ because of the backtracking strategy
+
+=== Input Sequences ===
+a = "HEAGAWGHEE"
+b = "PAWHEAE"
+
+=== Needleman-Wunsch ===
+HEAGAWGHE-E
+--P-AW-HEAE
+
+=== Smith-Waterman ===
+AWGHE
+AW-HE
